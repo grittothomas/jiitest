@@ -22,6 +22,7 @@ pipeline {
                       // Activate virtual environment if needed
                       sh 'pip install virtualenv'
                       sh 'virtualenv venv'
+                      sh 'chmod +x venv/bin/activate'
                       sh 'venv/bin/activate'
                       
                       // Install Flake8 and run it
