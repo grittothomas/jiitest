@@ -21,7 +21,7 @@ pipeline {
                   script {
                       // Activate virtual environment if needed
                       sh 'pip install virtualenv'
-                      sh 'virtualenv venv'
+                      sh '/var/lib/jenkins/.local/bin/virtualenv venv'
                       sh 'source ./venv/bin/activate'
                       
                       // Install Flake8 and run it
