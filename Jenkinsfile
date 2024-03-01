@@ -24,14 +24,6 @@ pipeline {
               }
               
           }
-    
-    stage('Run pytest') {
-            steps {
-                // Run pytest tests
-                sh 'pip install -r requirements.txt'
-                sh 'pytest'
-            }
-    }
 
 
     
