@@ -13,7 +13,7 @@ Features:
 - Displays a welcome message on the home page.
 - Provides basic information about the application.
 
-Feel free to explore and modify this application to suit your needs!
+
 
 """
 
@@ -24,8 +24,7 @@ def about():
 
 This text-based web application is built using Python Flask, a lightweight web framework.
 It serves as a starting point for building more complex web applications.
-You can add more routes, templates, and functionality as needed.
-Flask allows for easy expansion and customization, making it a great choice for web development projects.
+
 
 """
 
