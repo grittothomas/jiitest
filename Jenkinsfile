@@ -25,6 +25,12 @@ pipeline {
               
           }
     
+    stage('Run pytest') {
+            steps {
+                // Run pytest tests
+                sh 'pytest'
+            }
+    }
 
 
     
