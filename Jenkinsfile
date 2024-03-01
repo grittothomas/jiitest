@@ -22,7 +22,7 @@ pipeline {
                       // Activate virtual environment if needed
                       sh 'pip install virtualenv'
                       sh 'virtualenv venv'
-                      sh 'source venv/bin/activate || . venv/Scripts/activate'
+                      sh 'source ./venv/bin/activate'
                       
                       // Install Flake8 and run it
                       sh 'pip install flake8'
