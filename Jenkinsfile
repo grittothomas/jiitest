@@ -19,23 +19,10 @@ pipeline {
   stage('Code Analysis - Flake8') {
               steps {
                   script {
-                      // Activate virtual environment if needed
-                      sh 'pip install virtualenv'
-                      sh 'virtualenv venv'
-                      sh 'chmod +x venv/bin/activate'
-                      sh 'venv/bin/activate'
-                      
-                      // Install Flake8 and run it
-                      sh 'pip install flake8'
                       sh 'flake8 .'
                   }
               }
-              post {
-                  always {
-                      // Deactivate virtual environment after execution
-                      sh 'deactivate'
-                  }
-              }
+              
           }
     
 
